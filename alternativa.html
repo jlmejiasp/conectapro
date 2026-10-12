@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ConectaPro te ayuda a publicar campañas y gestionar los leads que llegan desde tus redes sociales.">
+  <title>ConectaPro · Publica y conecta</title>
+  <link rel="stylesheet" href="alternativa.css">
+</head>
+<body>
+  <header class="minimal-header">
+    <a class="brand" href="alternativa.html" aria-label="ConectaPro, inicio"><span class="brand-symbol">↗</span><span class="brand-word">Conecta<strong>Pro</strong></span></a>
+    <div class="workspace-state"><span class="state-dot"></span> Mi espacio</div>
+    <button class="help" aria-label="Ayuda">?</button>
+  </header>
+  <main class="page-shell">
+    <section class="hero-row">
+      <div class="hero-copy">
+        <p class="eyebrow">MI CAMPAÑA DE HOY</p>
+        <h1>Publica algo útil.<br><em>Conecta con interés real.</em></h1>
+        <p class="hero-text">Atrae personas desde tu landing o desde tus redes. Después, reúne todas las conversaciones en un solo lugar.</p>
+      </div>
+      <div class="flow-card" aria-label="Ruta de ConectaPro">
+        <p class="flow-kicker">RUTA SIMPLE</p>
+        <ol>
+          <li class="active"><span>1</span><div><strong>Elige una entrada</strong><small>Landing o campaña</small></div></li>
+          <li><span>2</span><div><strong>Publica y conecta</strong><small>Un mensaje con contexto</small></div></li>
+          <li><span>3</span><div><strong>Gestiona tus leads</strong><small>Responde y haz seguimiento</small></div></li>
+        </ol>
+      </div>
+    </section>
+    <section class="entry-panel panel">
+      <div class="panel-heading"><div><p class="panel-kicker">DOS CANALES DE ENTRADA</p><h2>Deja que las personas te encuentren a su manera</h2></div><span class="gallery-count">Una misma bandeja</span></div>
+      <div class="entry-options">
+        <a class="entry-option landing-entry" href="landing.html"><span class="entry-icon">↗</span><div><strong>Landing de tu negocio</strong><p>Una página seria con una propuesta clara y un llamado a la acción.</p></div><span class="entry-arrow">→</span></a>
+        <button class="entry-option campaign-entry" id="campaignEntry"><span class="entry-icon">✦</span><div><strong>Campañas para tus redes</strong><p>Elige una imagen, publica y empieza a recibir respuestas.</p></div><span class="entry-arrow">↓</span></button>
+      </div>
+    </section>
+    <section class="workspace-grid">
+      <div class="gallery-panel panel">
+        <div class="panel-heading"><div><p class="panel-kicker">1 · GALERÍA</p><h2>Elige una pieza para compartir</h2></div><span class="gallery-count">3 ideas listas</span></div>
+        <div class="campaign-grid" id="campaignGrid"></div>
+      </div>
+      <aside class="action-panel panel">
+        <p class="panel-kicker">2 · PREPARAR</p><h2>Tu publicación</h2>
+        <div class="selected-preview" id="selectedPreview"></div>
+        <p class="network-label">¿Dónde quieres compartirla?</p>
+        <div class="network-row" id="networkRow"><button class="network active" data-network="Instagram">Instagram</button><button class="network" data-network="Facebook">Facebook</button><button class="network" data-network="WhatsApp">WhatsApp</button></div>
+        <button class="primary-action" id="publishButton">Preparar publicación <span>→</span></button>
+        <button class="secondary-action" id="copyButton">Copiar texto</button>
+        <p class="action-note"><span>✦</span> Tú decides cuándo publicar. Nosotros te damos el punto de partida.</p>
+      </aside>
+    </section>
+    <section class="leads-panel panel">
+      <div class="leads-heading"><div><p class="panel-kicker">3 · TUS LEADS</p><h2>Gestiona las conversaciones que empiezan aquí.</h2></div><span class="leads-badge">0 nuevos</span></div>
+      <div class="lead-empty"><div class="lead-icon">✦</div><div><h3>Aún no tienes leads</h3><p>Cuando alguien responda a tu publicación, aparecerá aquí con el contexto de la campaña para que sepas cómo iniciar la conversación.</p></div><button class="empty-link" id="learnButton">Ver cómo funciona <span>→</span></button></div>
+    </section>
+  </main>
+  <p class="bottom-note">ConectaPro · Un siguiente paso claro para cada conversación</p>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="alternativa.js"></script>
+</body>
+</html>
